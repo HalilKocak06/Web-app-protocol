@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Chat</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="static/new_chat.js" defer></script>
+    <script src="static/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/bc646250ca.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    
+        <div><button id="New_Chat_Refresh" class="New_Chat_Top_Left">New Chat</button></div>
+        <div id="chat_container"></div>
+        <input class="chat_input" type="text" id="chat_input" name="chat_input" placeholder="Write your messages..." onkeyup="handleKeyDown(event)">
+        <button class="chat_input" id="chat_submit_button" onclick="sendMessage()" type="button" >
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </button>
+    
+</body>
+</html>

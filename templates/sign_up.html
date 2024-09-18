@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="static/sign_up.css">
+    <script src="static/sign_up.js" defer></script>
+</head>
+<body>
+
+  
+
+    <form id="sign_up" method="post" action="/sign_up">
+        <p>Username:                                                                            <!-- TODO:MAX16 karakter yap username'i-->
+        <input class="sign_up" type="text" id="username_input" name="username_input"  minlength=8    pattern="[^\s]+{8,16}"   title="Username cannot contain spaces" required> 
+        </p>
+        <p>Password:
+        <input class="sign_up" type="text" id="password_input" name="password_input" minlength=8 pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^\s]{8,16}" title="Password must includes at leaset one capital letter , one lower  letter and one number."  required>
+        </p>
+
+        <p>E-mail:                   <!-- TODO:Email doğrulama yap.-->
+        <input class="sign_up" type="email" id="email_input" name="email_input" required>
+        </p>
+
+        <p> <button id="register" class="register" type="submit">Register</button> </p>
+
+        <!-- <p>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>                      TODO:FLASH ile uyarı mesajı gönderme karakter sayısından dolayı çalışmıyor.
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        </p> -->
+        
+    </form>
+</body>
+</html>

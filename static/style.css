@@ -1,0 +1,173 @@
+body {
+    background-color : whitesmoke;
+    color : black;
+    transition: background-color 0.5s ease, color 05s ease;/*Yumuşak geçiş efekti */
+    
+}
+
+h1 {
+    color:black;
+    text-align : black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+#ferry_logo{
+        display: flex;
+        font-size:60px;
+        justify-content: center;
+        align-items: center;
+}
+
+
+
+
+.New_Chat_Top_Left {
+
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(102, 24, 176);
+    border:1px solid rgb(9, 9, 9);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.New_Chat_Top_Left {
+    background-color: whitesmoke;
+}
+
+.Sign_Up_Top_Right {
+    position : absolute;
+    top : 20px;
+    right :120px;
+    font-size : 20px;
+    background-color: whitesmoke;
+    border:1px solid rgb(9, 9, 9);
+    border-radius: 10px;
+    cursor : pointer;
+
+}
+.Sign_Up_Top_Right{
+    background-color: whitesmoke;
+}
+
+.Sign_In_Top_Right {
+    position: absolute;
+    top: 20px;
+    right:20px;
+    font-size: 20px;
+    background-color: rgb(74, 246, 134);
+    color:black;
+    border:1px solid rgb(9, 9, 9);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Sign_In_Top_Right{
+    background-color: whitesmoke;
+}
+
+
+/* Konumunu ve rengini ayarlar */
+.Light_Modes_Bottom_Left {
+
+    position:absolute;
+    padding: 15px 30px;
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+    background-color: whitesmoke;
+    border:1px solid rgb(9, 9, 9);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Light_Modes_Bottom_Left{
+    background-color: whitesmoke;
+}
+
+/* Ekranın rengini değiştirir */
+.dark_mode {
+    background-color: black;
+    color : whitesmoke;
+}
+
+/* Chat_input'un yerini değiştirir */
+#chat_input {
+    position: absolute;
+    bottom: 5%; 
+    left: 50%;  
+    transform: translate(-50%, -50%);  /* Ortalamak için */
+    padding: 10px;
+    font-size: 16px;
+}
+
+#chat_submit_button {
+    position:absolute;
+    bottom: 5%;
+    left:60%;
+    transform: translate(-50%, -50%);  /* Ortalamak için */
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+/* Chat mesaj baloncuğu: */
+
+
+/* General message style */
+.message{
+    max-width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+
+/* User's message style */
+.user-message {
+    background-color: #0084ff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-left-radius: 0;
+}
+
+
+/* Style for bot  message */
+.bot-message {
+    background-color: #e5e5ea;
+    color: black;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+#chat_container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:100px;   /*üstten boşluk atar. */
+    padding: 90px;
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.chat_input{
+    border-radius: 10px;
+}
+.chat_input{
+    border-radius: 10px;
+}

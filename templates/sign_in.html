@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sign In</title>
+<link rel="stylesheet" type="text/css" href="static/sign_in.css">
+
+</head>
+
+<body>
+    <form method="post">
+<p>
+    Username:
+    <input class="sign_in" type="text" id="username_input" name="username_input" minlength=8 required>
+<p> Password:
+<input class="sign_in" type="text" id="password_input" name="password_input"  pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^\s]{8,16}" title="Password must includes at leaset one capital letter , one lower  letter and one number." required>   
+<P>
+    <button id="Submit"class="register" type="submit">Submit</button>
+</P>
+</p>
+</p>
+</form>
+
+</body>
+
+<script src="static/script.js"  defer></script>
+
+</html>
